@@ -24,6 +24,8 @@ grep -c ">" "$name-families.prefix.fa.unknown"
 
 mkdir -p  01_simple_out 02_Aves_out 03_known_out 04_unknown_out
 
+
+mamba deactivate #for some reason, RepeatMasker doesn't work for me when my env 'repeats' is active
 ####################################################
 ####################################################
 echo
@@ -31,6 +33,7 @@ echo
 echo "ROUND 1: Annotate/mask the simple repeats"
 echo
 echo
+
 #ROUND 1: Annotate/mask the simple repeats
 RepeatMasker -pa 16 -a -e ncbi -dir 01_simple_out -noint -xsmall $genome  2>&1 | tee logs/01_simplemask.log
 
