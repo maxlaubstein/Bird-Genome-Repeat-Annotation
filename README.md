@@ -6,6 +6,7 @@ Assumes you have working installations of RepeatModeler, RepeatMasker, seqkit, P
 Usage:
 
 ./bird_repeat_annotation.sh     /path/to/genome/assembly     species_shorthand_name
-e.g.
+
+for example:
 
 ./bird_repeat_annotation.sh     /ncbi_dataset/data/GCF_048771995.1/GCF_048771995.1_bTaeGut7.mat_genomic.fna     taeGut
